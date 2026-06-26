@@ -1,28 +1,139 @@
-I want you to help me turn this into a real business that can make money.
-
-Business name: Forge AI
-
-Context:
-I am building this with GitHub and Vercel.
-I do not want a vague AI company site. I want a real SaaS business.
-The idea is a micro-SaaS for creators and small businesses.
-
-Core offer:
-A user pastes one transcript, blog post, or rough idea, and Forge AI turns it into:
-- X/Twitter posts
-- a LinkedIn post
-- an email/newsletter draft
-- short captions
-
-I want blunt startup feedback.
-
-Give me:
-1. whether this is a good business in 2026
-2. the best target customer to start with
-3. the smallest MVP I can launch in 7 days
-4. realistic pricing
-5. the best homepage headline, subheadline, CTA, and 5 features
-6. what would make this look official and trustworthy enough for customers to pay
-7. the biggest mistakes that would make this fail
-
-Be brutally honest, practical, and specific. No generic motivation.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forge AI</title>
+  <meta name="description" content="Forge AI helps consultants and small business owners turn one idea into a week of content." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f7f6f2;--surface:#fff;--text:#28251d;--muted:#6d685f;--border:#ddd7cf;
+      --primary:#01696f;--primary-dark:#0c4e54;--highlight:#d9e7e4;--radius:20px;
+      --shadow:0 18px 40px rgba(30,24,16,.10);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    .container{width:min(1120px,calc(100% - 32px));margin:auto}
+    header{padding:20px 0;border-bottom:1px solid var(--border);background:rgba(247,246,242,.92);backdrop-filter:blur(12px);position:sticky;top:0}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{font-weight:800;font-size:15px;letter-spacing:.02em}
+    .hero{padding:72px 0 48px}
+    .hero-grid,.grid{display:grid;gap:24px}
+    .eyebrow{display:inline-block;background:var(--highlight);color:var(--primary);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
+    h1{font-family:'Instrument Serif',serif;font-size:clamp(48px,8vw,96px);line-height:.95;margin-top:18px;max-width:10ch}
+    h2{font-family:'Instrument Serif',serif;font-size:clamp(32px,5vw,56px);line-height:1;margin-bottom:12px}
+    .hero p,.section-copy,.feature p,.price-card p{color:var(--muted)}
+    .hero p{max-width:60ch;margin-top:18px;font-size:18px}
+    .actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:0 18px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px}
+    .btn-primary{background:var(--primary);color:#fff}
+    .btn-secondary{background:var(--surface);color:var(--text);border:1px solid var(--border)}
+    .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+    .mock-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-weight:800;margin-bottom:10px}
+    .mock-box{border:1px solid var(--border);border-radius:16px;padding:16px;background:#fbfaf8;margin-bottom:14px;color:var(--muted)}
+    section{padding:56px 0}
+    .section-copy{max-width:64ch;margin-bottom:24px}
+    .feature h3,.price-card h3{font-size:22px;margin-bottom:8px}
+    .price{font-size:44px;font-weight:800;line-height:1;margin:10px 0}
+    ul{margin-top:12px;padding-left:18px;color:var(--muted)}
+    .cta{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff;border-radius:28px;padding:40px 28px}
+    .cta p{color:rgba(255,255,255,.82);margin-top:12px;max-width:56ch}
+    footer{padding:28px 0 40px;color:var(--muted);font-size:14px}
+    @media (min-width:860px){
+      .hero-grid{grid-template-columns:1.05fr .95fr}
+      .grid-3{grid-template-columns:repeat(3,1fr)}
+      .grid-2{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">Forge AI</div>
+      <a class="btn btn-primary" href="#pricing">Start creating content</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Built for consultants and small businesses</span>
+          <h1>Turn one idea into a week of content.</h1>
+          <p>Forge AI helps consultants and small business owners turn one rough idea, transcript, or client insight into ready-to-edit posts for LinkedIn, X, email, and captions.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#pricing">Start creating content</a>
+            <a class="btn btn-secondary" href="#demo">See sample output</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="mock-label">Source material</div>
+          <div class="mock-box">“Most local businesses do not lose leads because of bad ads. They lose them because they follow up too slowly.”</div>
+          <div class="mock-label">Content pack</div>
+          <div class="mock-box">1 LinkedIn post, 5 X posts, 1 email draft, 5 captions, and 3 hooks from one idea.</div>
+        </div>
+      </div>
+    </section>
+    <section id="demo">
+      <div class="container">
+        <h2>Show the transformation</h2>
+        <p class="section-copy">People trust the product faster when they can see rough input become polished business content.</p>
+        <div class="grid grid-2">
+          <div class="card">
+            <div class="mock-label">Before</div>
+            <p>“Contractors lose leads because they wait too long to follow up. Speed matters more than fancy marketing.”</p>
+          </div>
+          <div class="card">
+            <div class="mock-label">After</div>
+            <ul>
+              <li>1 LinkedIn authority post</li>
+              <li>5 short X posts</li>
+              <li>1 trust-building email draft</li>
+              <li>5 captions</li>
+              <li>3 reusable hooks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Why people would pay</h2>
+        <p class="section-copy">The first version should feel focused, useful, and official.</p>
+        <div class="grid grid-3">
+          <div class="card feature"><h3>One-click content packs</h3><p>Users get a full weekly pack instead of random text output.</p></div>
+          <div class="card feature"><h3>Business-first writing</h3><p>Made for consultants, coaches, and service businesses—not generic creators.</p></div>
+          <div class="card feature"><h3>Fast copy workflow</h3><p>Clean cards and readable outputs make the product feel paid, not hacked together.</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="container">
+        <h2>Launch pricing</h2>
+        <p class="section-copy">Start simple, charge early, and prove people will pay.</p>
+        <div class="grid grid-3">
+          <div class="card price-card"><h3>Trial</h3><div class="price">Free</div><p>3 content packs. No credit card required.</p></div>
+          <div class="card price-card"><h3>Starter</h3><div class="price">$19</div><p>20 content packs per month for early users.</p></div>
+          <div class="card price-card"><h3>Pro</h3><div class="price">$29</div><p>More volume and saved brand voice later.</p></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>Turn one business idea into a full week of content.</h2>
+          <p>Forge AI is built to help expertise-based businesses post more consistently without wasting hours rewriting the same thought for every platform.</p>
+          <div class="actions">
+            <a class="btn btn-secondary" href="mailto:support@forgeai.co">support@forgeai.co</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">Forge AI — built for consultants and small businesses.</div>
+  </footer>
+</body>
+</html>
